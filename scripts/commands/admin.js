@@ -1,13 +1,17 @@
 module.exports.config = {
-  name: "admin",
-  version: "2.0.0",
-  permission: 0,
-  credits: "Nayan",
-  description: "control admin lists",
-  prefix: false,
-  category: "admin",
-  usages: "admin [add/remove] [uid]",
-  cooldowns: 5,
+name: "admin",
+version: "1.0.1", 
+hasPermssion: 0,
+credits: "aizen code", //don't change the credits please
+description: "Admin and Bot info.",
+commandCategory: "...",
+cooldowns: 1,
+dependencies: 
+{
+    "request":"",
+    "fs-extra":"",
+    "axios":""
+  }
 };
 module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
 const axios = global.nodemodule["axios"];
